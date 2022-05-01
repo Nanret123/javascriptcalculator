@@ -13,7 +13,6 @@ body {
     align-content: center;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    min-height: 100vh;
 }
 
 .calculator-grid>button {
@@ -45,6 +44,10 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+    border: 2px solid #ffeeee;
+    box-shadow: 10px 10px 25px #d9caca, -10px -10px 17px #ffffff;
+    margin: 20px 0;
+    border-radius: 20px;
 }
 
 .output .top-layer {
@@ -55,11 +58,4 @@ body {
 .output .bottom-layer {
     font-size: 2.5rem;
     color: #694e4e;
-}
-
-@media screen and (max-width: 1200px) {
-    .calculator-grid {
-        max-width: 95%
-    }
-    ;
 }
